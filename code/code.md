@@ -44,4 +44,18 @@ We use a variety of different codes for communicating among ourselves because so
 Various types of codes are also used in computers to store and communicate numbers, sounds, music pictures and movies. Computers can't deal with human codes directly because computers can't duplicate the ways in which human beings use their eyes, ears, mouths and fingers.
 
 
+# 2. Codes and Combinations
 
+The invention of Morse code goes hand in hand with the invention  of the telegraph.
+
+Just as Morse code provides a good introduction to the nature of codes, the telegraph provides a good introduction to the hardware of the computer.
+
+Most people find Morse code easier to send than to receive. Receiving Morse code and translating it back into words is considerably harder and more time consuming than sending because you must work backward to figure out the letter that corresponds to a particular coded sequence of dots and dashes.
+
+The word *undefined* used in this context refers to a code that doesn't stand for anything. You could be pretty sure that somebody made a mistake.
+
+Morse code is said to be *binary* code because the components of the code consist only of two things- a dot and a dash. That's similar to a coin, which can land only on the head side or the tail side. Binary objects are always described by powers of two.
+
+What we're doing by analysing binary codes is a simple exercise in the branch of mathematics known as *combinatronics or combinatorial analysis*.
+
+# 3. Braille and Binary codes
