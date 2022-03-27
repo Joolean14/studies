@@ -34,4 +34,70 @@ file
 **media** Mount points for removable media such as USB drives, CD-ROMS, etc that are mounted automatically at insertion.
 **/mnt** On older Linux systems this directory contains points for removable devices that have been mounted manually.
 **/opt** This directory is used to install 'optional' software. Commercial software products that might be installed on the system.
-**/proc** Virtual file system mantained by the Linux kernel
+**/proc** Virtual file system mantained by the Linux kernel. 'Peepholes into the kernel'.
+**/root** Home directory for the root account.
+**/sbin** System binaries. Vital system tasks reserved for the superuser.
+**/tmp** Storage of temporary transient files created by various programs. Some configurations cause this directory to be emptied each time the system is rebooted.
+**/usr** Contains all programs and support files used by regular users.
+**/usr/bin** Executable programs installed by the Linux distro.
+**/usr/lib** Shared libraries for the programs in /usr/bin.
+**/usr/local** Directory where programs that are not included in the distro but are intended for system-wide use are installed.
+**/usr/sbin** Contains more system administration programs.
+**/usr/share** Contains all the shared data used by programs in /usr/bin.
+**/usr/share/doc** Installed packages docs.
+**/var** Data that is likely to change is stored. Various databases, spool files, user mail...
+**/var/log** Records of various system activity.
+
+# Manipulating Files and Directories
+
+cp
+mv
+mkdir
+rm
+ln 
+
+**Wildcards**
+
+* - matches any characters
+? - matched any single character
+[characters] - matches any character that is a member of the set characters
+[!characters] - matches any character that is not a member of the set characters 
+
+[[:class:]] - matches any character that is a member of the specified class
+[:alnum:] - alphanumeric
+[:alpha:] - alphabetic
+[:digit:] - numeral
+[:lower:] - lowercase
+[:upper:] - uppercase
+
+*examples page 26 of the book*
+*test wildcards first with ls**
+
+**cp**
+
+**-i --interactive** - Before overwriting an existing file, prompt the user for confirmation. If this option is not specified, cp will silently overwrite files. 
+**-r --recursive** -  Recursively copy directories and their contents. Required for copying directories.
+**-u --update** - Only copy files that either don't exist or are newer than the existing corresponding files.
+**-v --verbose** Display informative messages as the copy is performed.
+
+**mv**
+
+**-i --interactive** - Before overwriting an existing file, prompt the user for confirmation. If this option is not specified, cp will silently overwrite files
+**-u --update** - Only move files that either don't exist or are newer than the existing corresponding files.
+**-v --verbose** Display informative messages as the move is performed.
+
+**rm**
+
+**-i --interactive** - Before deleting an existing file, prompt the user for confirmation. If this option is not specified, cp will silently delete files
+**-f --force** - Ignore nonexistent files and do not prompt. This overrides the --interactive option.
+**-v --verbose** Display informative messages as the move is performed.
+
+
+?????????????????????????????????????????????????????????????????????????
+**SYMBOLIC LINKS**
+?????????????????????????????????????????????????????????????????????????
+
+
+# Working with commands
+
+
