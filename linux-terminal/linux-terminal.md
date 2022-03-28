@@ -100,4 +100,70 @@ ln
 
 # Working with commands
 
+A command can be one of four different things:
+
+1. An executable program
+2. A command built into the shell itself
+3. A shell function
+4. An alias
+
+**type** - indicate how a command name is interpreted
+
+**which** - sometimes there is more than one version of an executable program installed on a system. While it is not common on desktop systems, it's not unusual on large servers.
+To determine the exact location of a given executable, the *which* command is used.
+
+# Getting a command's documentation
+
+**help** - Get help for Shell builtins.
+
+**man** - Display a programś manual page
+
+1. User commands
+2. Programming interfaces for kernel system calls
+3. Programming interfaces to the C library
+4. Special files such as device nodes and drivers
+5. File formats
+6. Games and amusements such as screen savers
+7. Miscellaneus
+8. System administration commands
+
+*man section searc_term* -> man 5 passwd
+
+**apropos** - Display appropiate commands. It is also possible to search the list of man pages for possible matches based on a search term.
+
+**whatis** - Display a one-line manual page description
+
+**info** - Display a program's Info entry. Info manuals are displayed with a reader program named info. Info pages are *hyperlinked* much like webpages.
+
+**alias** - Create an alias for a command.
+
+1. Search with **type** if it already exists.
+2. Create it like this:
+
+    alias <name> = '<command>; <command>; ... '
+
+3. To remove alias:
+
+    unalias <command>
+
+# Redirection
+
+**cat** - Concatenate files
+**sort** - Sort lines of text
+**uniq** - Report or omit repeated lines
+**grep** - Print lines matching a pattern
+**wc** - Print newline, word, and byte counts for each file
+**head** - Output the first part of a vile
+**tail** - Output the last part of a file
+**tee** - read from standard input and write to standard output and files
+
+
+
+# Synopsis
+
+https://medium.com/@jaewei.j.w/how-to-read-man-page-synopsis-3408e7fd0e42
+
+https://man7.org/linux/man-pages/man7/man-pages.7.html
+
+https://pubs.opengroup.org/onlinepubs/9699919799/basedefs/V1_chap12.html
 
